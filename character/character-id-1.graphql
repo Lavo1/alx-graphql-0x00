@@ -1,11 +1,11 @@
 ```graphql
 query {
-  character(id: 1) {
-    id
-    name
-    status
-    species
-    type
-    gender
+  characters(page: 1) {
+    results {
+      id
+      name
+      status
+      image
+    }
   }
 }
